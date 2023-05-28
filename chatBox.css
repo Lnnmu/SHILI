@@ -4,17 +4,18 @@
 }
 #main {
     padding: 20px 20px;
-    width: 90%;
-    min-height: 200px;
-    height: var(--height);
-    margin: 0 auto;
+    width: 86%;
+    /* min-height: 400px; */
+    height:87vh;
+    margin: calc((100vh - 87vh ) / 4) auto;
     background-color: #ccc;
     border-radius: 10px;
+    position: relative;
 }
 
 .chat-box {
     width: 100%;
-    height: 90%;
+    height: calc(100% - var(--inputheight));
     background-color: white;
     overflow-y: scroll;
     border: 2px solid #000000;
@@ -39,6 +40,8 @@
 }
 
 .input-box {
+    position: absolute;
+    bottom: 10px;
     width: 100%;
     height: var(--inputheight);
     border-radius: 5px;
@@ -46,16 +49,16 @@
 }
 
 .input-box>input {
-    width: calc(100% - 50px);
+    width: calc(100% - 80px);
     height: 100%;
     border-radius: 5px;
     box-sizing: border-box;
 }
 
 .input-box>button {
-    width: 50px;
+    width: 40px;
     height: 100%;
     outline:0;
-    float: right;
+    /* float: right; */
     border-radius: 5px;
 }
