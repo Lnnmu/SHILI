@@ -5,60 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        :root {
-            --weight: 600px;
-            --height: 400px;
-            --inputheight: 30px;
-        }
-
-        #main {
-            padding: 20px 0;
-            width: var(--weight);
-            margin: 0 auto;
-        }
-
-        .chat-box {
-            width: var(--weight);
-            height: var(--height);
-            border: 1px solid #ccc;
-            overflow-y: scroll;
-        }
-
-        .message {
-            padding: 10px;
-            margin-bottom: 10px;
-            background-color: #f1f0f0;
-            border-radius: 10px;
-        }
-
-        .user {
-            font-weight: bold;
-            margin: 0;
-        }
-
-        .text {
-            margin: 0;
-        }
-
-        .input-box {
-            width: var(--weight);
-            height: var(--inputheight);
-        }
-
-        .input-box>input {
-            width: 89%;
-            height: 100%;
-        }
-
-        .input-box>button {
-            width: 9%;
-            height: 100%;
-        }
-    </style>
+    <title>CHAT</title>
+    <link rel="stylesheet" type="text/css" href="chatBox.css">
 </head>
-
 <body>
     <div id="main">
         <div class="chat-box">
@@ -69,7 +18,7 @@
         </div>
         <div class="input-box">
             <input text="type" id="input-type" onkeydown="Enterkey()">
-            <button onclick="sendMessage()">发送</button>
+            <button onclick="sendMessage()">Go</button>
         </div>
     </div>
     <script src="chatBox.js"> </script>
